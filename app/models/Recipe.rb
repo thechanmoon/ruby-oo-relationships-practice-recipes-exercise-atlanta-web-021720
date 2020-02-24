@@ -10,4 +10,23 @@ class Recipe
         @@all
     end
 
+    def self.most_popular
+    
+    end
+
+    def users
+    
+    end
+
+    def ingredients
+    
+    end
+    
+    def allergens
+    
+    end
+
+    def users
+    
+    end
 end

@@ -10,4 +10,7 @@ class Ingredient
         @@all
     end
 
+    def most_common_allergen
+    
+    end
 end
