@@ -42,7 +42,8 @@ class User
     end
 
     def top_three_recipes
-        recipes_sort.slice(0,3)
+        # recipes_sort.slice(0,3)
+        recipes_sort.first(3)
     end
 
     def most_recent_recipe
