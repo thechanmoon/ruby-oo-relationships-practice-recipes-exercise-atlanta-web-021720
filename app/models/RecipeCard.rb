@@ -15,8 +15,11 @@ class RecipeCard
         @@all
     end
 end
+
 # u= User.new("Ian")
-# 5.times do
-# r = RecipeCard.new("02/24/20202", 0.3, u, "good recipe")
-# end
-# u.add_recipe_card
+# i = Ingredient.new("Soy")
+# r = Recipe.new("Best Recipe")
+
+# al = Allergy.new(u,i)
+# rc = RecipeCard.new("good recipe_2", 0.3,u,r)
+# reig = RecipeIngredient.new(r,i)
