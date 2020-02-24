@@ -1,4 +1,4 @@
-class Ingredientß
+class Ingredient
 
     @@all = []
     
