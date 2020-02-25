@@ -28,19 +28,24 @@ class Recipe
         end
     end
 
-    def recipe_ingredient_cards
+    def recipe_ingredients
         RecipeIngredient.all.select do |recipe_ingredient|
             recipe_ingredient.recipe == self
         end
     end
 
     def ingredients
-        recipe_ingredient_cards.map do |card|
-            card.ingredient
+        recipe_ingredients.map do |recipe_ingredient|
+            if(recipe_ingredient. ) do 
         end
     end
 
     def allergens
+
+        ingredients.map do |ingredient|
+            Allergy.all.select 
+        end
+
         # Allergy.all.select do |allergy|
         #     /allergy.user == 
         # end
@@ -57,7 +62,6 @@ class Recipe
         #     }
         # end
         # return newArray
-
         
     end
 end

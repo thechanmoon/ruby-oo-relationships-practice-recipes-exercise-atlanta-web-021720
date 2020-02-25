@@ -51,4 +51,7 @@ class User
         recipe_cards.last
     end
 
+    def safe_recipes
+    
+    end    
 end
