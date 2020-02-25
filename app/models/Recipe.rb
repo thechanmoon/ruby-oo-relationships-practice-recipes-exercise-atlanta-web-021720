@@ -36,16 +36,21 @@ class Recipe
 
     def ingredients
         recipe_ingredients.map do |recipe_ingredient|
-            if(recipe_ingredient. ) do 
+            recipe_ingredient.ingredient
         end
     end
 
     def allergens
 
-        ingredients.map do |ingredient|
-            Allergy.all.select 
+        retArray = []
+        ingredients.each do |ingredient|
+            Allergy.all.each do |allergy|
+                if allergy.ingredient == ingredient
+                    retArray << ingredient
+                end    
+            end 
         end
-
+        retArray
         # Allergy.all.select do |allergy|
         #     /allergy.user == 
         # end
