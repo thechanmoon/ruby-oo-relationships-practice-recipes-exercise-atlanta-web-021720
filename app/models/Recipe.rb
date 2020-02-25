@@ -69,4 +69,10 @@ class Recipe
         # return newArray
         
     end
+
+    def add_ingredients(ingredients)
+        ingredients.each do |ingredient|
+            RecipeIngredient.new(self,ingredient)
+        end
+    end
 end
